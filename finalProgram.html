@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Tracker</h1>
+        <form id="workoutForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="exercise" placeholder="Exercise" required>
+            <input type="number" id="duration" placeholder="Duration (minutes)" required>
+            <input type="number" id="calories" placeholder="Calories Burned" required>
+            <button type="submit">Add Workout</button>
+        </form>
+        <h2>Workout History</h2>
+        <table id="workoutTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Exercise</th>
+                    <th>Duration (min)</th>
+                    <th>Calories</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <h2>Total Calories Burned: <span id="totalCalories">0</span></h2>
+    </div>
+
+    <script src="index.js"> </script>
+</body>
+</html>
